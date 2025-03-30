@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #b4b4b4;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: .5%;
+    display: flex;
+    justify-content: center;
+    background-color: #ffcb05;
+
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00274C;
+    
+
+}
+
+.skip-link {
+    position: absolute; /* Position it absolutely */
+    top: 2%; /* Vertically center the link */
+    left: 0;
+    width: 100%; /* Stretch it across the full width */
+    text-align: center; /* Center the text */
+    background-color: #ffcb05;
+    color: #00274C;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-decoration: none;
+    z-index: 100;
+    transform: translateY(-50%); /* Correct vertical positioning */
+}
+
+.skip-link:hover {
+    background-color: #00274C; /* Dark background when focused */
+    color: white; /* White text when focused */
+    border-radius: 5px;
+    box-shadow: 0 0 5px white; /* Add a white border or glow effect */
+}
+
+nav ul li a:hover {
+    background-color: #00274C;
+    color: #fff;
+    padding: .2%;
+    border-radius: .2%;
+}
+
+/* Main Content */
+main {
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Images */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #b4b4b4;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1em;
+}

@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #b4b4b4;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.skip-link {
+    position: absolute; /* Position it absolutely */
+    top: 2%; /* Vertically center the link */
+    left: 0;
+    width: 100%; /* Stretch it across the full width */
+    text-align: center; /* Center the text */
+    background-color: #ffcb05;
+    color: #00274C;
+    padding: 10px 20px;
+    text-decoration: none;
+    z-index: 100;
+    transform: translateY(-50%); /* Correct vertical positioning */
+}
+
+.skip-link:focus {
+    background-color: #00274C; /* Dark background when focused */
+    color: white; /* White text when focused */
+    border-radius: 5px;
+    box-shadow: 0 0 5px white; /* Add a white border or glow effect */
+}
+
+header img {
+    max-width: 80%;
+    height: auto;
+    padding: 2%;
+    padding-top: 5%;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #ffcb05;
+}
+
+nav ul li {
+    display: block;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00274C;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+.skip-link:hover {
+    background-color: #00274C; /* Dark background when focused */
+    color: white; /* White text when focused */
+    border-radius: 5px;
+    box-shadow: 0 0 5px white; /* Add a white border or glow effect */
+}
+
+nav ul li a:hover {
+    background-color: #00274C;
+    color: #fff;
+
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Images */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #b4b4b4;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
