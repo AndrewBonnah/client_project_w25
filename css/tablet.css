@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
-    color: #333;
+    color: #000000;
 }
 
 /* Header */
@@ -16,6 +16,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+ 
 }
 
 header img {
@@ -105,4 +106,25 @@ footer {
     text-align: center;
     padding: 15px 0;
     font-size: 1em;
+}
+/* Tablet View (min-width: 768px and up to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-color: lightblue;
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Arrange nav items horizontally */
+        justify-content: space-between;
+    }
+
+    header {
+        text-align: left;
+        padding: 15px;
+    }
+
+    img {
+        max-width: 100%;
+    }
 }

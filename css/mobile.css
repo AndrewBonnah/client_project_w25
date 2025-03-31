@@ -14,6 +14,14 @@ header {
     padding: 10px;
     text-align: center;
 }
+/* When the showMenu class is added */
+header.showMenu {
+    transform: translateY(0);  /* Move header to its original position */
+}
+.closeIcon {
+    display: none;
+  }
+  
 .skip-link {
     position: absolute; /* Position it absolutely */
     top: 2%; /* Vertically center the link */
@@ -101,9 +109,47 @@ img {
 
 /* Footer */
 footer {
-    background-color: #b4b4b4;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 0;
     font-size: 0.9em;
+    
 }
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+  }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    body {
+        background-color: lightgray;
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center;
+        padding: 10px;
+    }
+
+    nav ul li {
+        padding: 10px 0; /* Add vertical padding for nav items */
+    }
+
+    header {
+        text-align: center;
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%; /* Ensure images are responsive */
+    }
+}
+

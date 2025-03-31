@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Project - Homepage</title>
     <script src="handleresize.js"></script>
+
 </head>
 <body>
 
@@ -13,10 +14,10 @@
         <a href="#main-content" class="skip-link">Skip to Main Content</a>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="food_pantry.html">Food Pantry</a></li>
-                <li><a href="study_spaces.html">Study Spaces</a></li>
-                <li><a href="caps.html">CAPS</a></li>
+                <li><a class="menuItem" href="index.html">Home</a></li>
+                <li><a class="menuItem" href="food_pantry.html">Food Pantry</a></li>
+                <li><a class="menuItem" href="study_spaces.html">Study Spaces</a></li>
+                <li><a class="menuItem" href="caps.html">CAPS</a></li>
 
             </ul>
         </nav>
@@ -24,7 +25,8 @@
     <img src="https://basicneeds.studentlife.umich.edu/wp-content/uploads/2019/10/criticalincident.jpg"
     alt="man struggles with computer.">
     <main id="main-content">
-        <h1>Welcome to the Client Project Homepage</h1>
+        <h1 id="headerText">Welcome to the Client Project Homepage</h1>
+        <button id="toggleButton">Toggle Text Size</button>
         <p>This website is designed to provide students with essential resources available on campus. Below is a brief overview of what you can find on this website:</p>
         
         <section>
@@ -43,8 +45,10 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 University of Michigan</p>
-    </footer>
+
+    
 </body>
+<footer>
+    <p>© Copyrights <span id="year"></span></p>
+</footer>
 </html>
